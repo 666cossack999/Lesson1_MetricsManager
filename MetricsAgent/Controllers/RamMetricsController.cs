@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MetricsAgent.Controllers
 {
-    [Route("api/metrics/hdd")]
+    [Route("api/metrics/ram/available")]
     [ApiController]
-    public class HddMetricsController : ControllerBase
+    public class RamMetricsController : ControllerBase
     {
-        [HttpGet("left")]
-        public IActionResult GetMetrics(string freeSpace)
+        [HttpGet("available")]
+        public IActionResult GetMetrics(string available)
         {
             return Ok();
         }
